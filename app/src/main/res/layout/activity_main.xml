@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--1-->
+    <TextView
+        android:id="@+id/napis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        android:background="#2196F3"
+        android:text="Witaj przyjacielu!">
+    </TextView>
+
+    <SeekBar
+        android:id="@+id/seekB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="100">
+    </SeekBar>
+
+    <TextView
+        android:id="@+id/napisProcenty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100%"
+        android:textSize="16sp">
+    </TextView>
+
+    <!--2-->
+    <View
+        android:id="@+id/viewKwadrat"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@color/black">
+    </View>
+
+    <Button
+        android:id="@+id/przyciskminus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-10%">
+    </Button>
+
+    <Button
+        android:id="@+id/przyciskplus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+10%">
+    </Button>
+
+    <TextView
+        android:id="@+id/wartosc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100%">
+    </TextView>
+
+    <!--3-->
+    <LinearLayout
+        android:id="@+id/panelGlowny"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3639CA"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewTekst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tekst w panelu">
+        </TextView>
+
+        <Button
+            android:id="@+id/przyciskpanel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Przycisk w panelu">
+        </Button>
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/Opcje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tylko tło"
+            android:id="@+id/przycisktylkotlo"
+            android:checked="true">
+        </RadioButton>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tylko tekst"
+            android:id="@+id/przycisktylkotekst">
+        </RadioButton>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cały panel"
+            android:id="@+id/przyciskcalypanel">
+        </RadioButton>
+
+    </RadioGroup>
+
+    <SeekBar
+        android:id="@+id/przedzialPrze"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="100">
+    </SeekBar>
+
+</LinearLayout>
